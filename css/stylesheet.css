@@ -1,0 +1,120 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #2B2B2B;
+    color: #A9B7C6;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* Extra small screen */
+@media only screen and (max-width: 600px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /* banner {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 5fr;
+        grid-template-rows: auto;
+    } */
+
+    header {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    menu {
+        padding: 0px;
+        font-size: 15px;
+        margin: 5px;
+        width: ;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    #logo-pic {
+        height: 80px;
+        border: solid #9876AA 2px;
+        border-radius: 10px;
+        display: none;
+    }
+
+    main h3{
+        text-align: center;
+    }
+
+    main p, a {
+        font-size: 12px;
+    }
+
+}
+/* Small devices*/
+@media only screen and (min-width: 600px) {
+}
+  
+/* Medium devices*/
+@media only screen and (min-width: 768px) {
+
+}
+  
+/* Large devices*/
+@media only screen and (min-width: 992px) {
+
+}
+  
+/* Extra large devices*/
+@media only screen and (min-width: 1200px) {
+}
+
+
+nav > a {
+    color: #9eb3c2;
+    text-decoration: none;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+}
+
+#keyword-orange {
+    color: #CB772F;
+}
+
+#string-green {
+    color: #619647;
+}
+
+#class-purp {
+    color: #9876AA;
+}
+
+main a {
+    color: #9eb3c2;
+    text-decoration: none;
+}
+
+main > a:hover {
+    text-decoration: underline;
+}
+
+main h3 {
+    margin-bottom: 0px;
+    margin-top: 40px;
+}
+
+main p {
+    margin: 0px;
+}
+
+main h4 {
+    margin: 2px;
+    margin-top: 20px;
+}
+
+   
