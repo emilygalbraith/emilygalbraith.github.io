@@ -9,18 +9,11 @@ body {
 }
 
 /* Extra small screen */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
     body {
         display: grid;
         grid-template-columns: 1fr;
     }
-
-    /* banner {
-        display: grid;
-        gap: 10px;
-        grid-template-columns: 1fr 5fr;
-        grid-template-rows: auto;
-    } */
 
     header {
         font-size: 10px;
@@ -31,7 +24,7 @@ body {
         padding: 0px;
         font-size: 15px;
         margin: 5px;
-        width: ;
+        /* width: ; */
     }
 
     nav {
@@ -54,12 +47,47 @@ body {
     }
 
 }
-/* Small devices*/
-@media only screen and (min-width: 600px) {
-}
   
 /* Medium devices*/
 @media only screen and (min-width: 768px) {
+    #main-container {
+        display: grid;
+        grid-template-columns: 20vw 80vw;
+        grid-template-areas:
+            "banner banner"
+    }
+
+    banner {
+        grid-area: banner;
+        display: grid;
+        grid-template-columns: 20vw 80vw;
+        grid-template-areas: 
+            "pic header";
+    }
+
+    menu {
+        justify-content: left;
+        list-style: none;
+        padding: 0px;
+    }
+
+    main {
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "about-me about-me about-me"
+            "projects projects projects"
+            "contact-info contact-info contact-info";
+    }
+
+    #logo-pic {
+        height: 13em;
+        width: auto;
+        border: solid #9876AA 2px;
+        border-radius: 10px;
+        
+    }
 
 }
   
@@ -72,6 +100,37 @@ body {
 @media only screen and (min-width: 1200px) {
 }
 
+#logo-pic {
+    grid-area: pic;
+}
+
+banner > header {
+    grid-area: header;
+}
+
+/* #ae-link {
+    grid-area: ae-link;
+}
+
+#p-link {
+    grid-area: p-link;
+}
+
+#ci-link {
+    grid-area: ci-link;
+} */
+
+#AboutMe {
+    grid-area: about-me;
+}
+
+#Projects {
+    grid-area: projects;
+}
+
+#ContactInfo {
+    grid-area: contact-info;
+}
 
 nav > a {
     color: #9eb3c2;
