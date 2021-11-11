@@ -20,10 +20,6 @@ body {
         text-align: center;
     }
 
-    h1 {
-        margin-bottom: 3px;
-    }
-
     menu {
         padding: 0px;
         font-size: 15px;
@@ -33,7 +29,6 @@ body {
     }
 
     nav {
-        margin-top: 10px;
         text-align: center;
     }
 
@@ -54,15 +49,11 @@ body {
     }
 
     main a {
-        font-size: 1em;
+        font-size: .9em;
     }
 
     h4 {
         font-size: .9em;
-    }
-
-    banner > header {
-        border-bottom: #9876AA solid 3px;
     }
 
 }
@@ -71,62 +62,41 @@ body {
 @media only screen and (min-width: 768px) {
     #main-container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 20vw 80vw;
         grid-template-areas:
-            "banner banner banner banner"
-            "main main main main"
-            "main main main main"
-            "main main main main";
+            "banner banner"
     }
 
     banner {
-        border-bottom: solid #9876AA 4px; 
         grid-area: banner;
-        align-items: end;
         display: grid;
-        grid-template-columns: 1.6fr 1fr 1fr 1fr;
+        grid-template-columns: 20vw 80vw;
         grid-template-areas: 
-            "pic header header header";
+            "pic header";
     }
 
     menu {
-        margin-top: 40px;
-        margin-left: 15px;
+        justify-content: left;
         list-style-type: none;
         padding: 0px;
     }
 
     main {
         grid-area: main;
-        column-gap: 30px;
-        align-items: start;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
-            "menu about-me about-me about-me"
-            "menu projects projects projects"
-            "menu contact-info contact-info contact-info";
+            "about-me about-me about-me"
+            "projects projects projects"
+            "contact-info contact-info contact-info";
     }
 
     #logo-pic {
-        height: 12em;
+        height: 13em;
         width: auto;
-        /* border: solid #9876AA 2px; */
+        border: solid #9876AA 2px;
         border-radius: 10px;
-        margin-left: 40px;
-        /* display: none; */
         
-    }
-
-    h1 {
-        margin: 0px;
-        font-size: 1.8em;
-        
-    }
-
-    menu li {
-        margin-bottom: 15px;
-        font-weight: bold;
     }
 
 }
@@ -153,8 +123,7 @@ menu li {
 }
 
 menu a {
-    color: #A9B7C6;
-    text-decoration: none;
+    color: #9eb3c2;
 }
 
 #AboutMe {
@@ -170,7 +139,7 @@ menu a {
 }
 
 nav > a {
-    color: #A9B7C6;
+    color: #9eb3c2;
     text-decoration: none;
 }
 
@@ -192,7 +161,7 @@ nav > a:hover {
 
 
 main a {
-    color: #A9B7C6;
+    color: #9eb3c2;
     text-decoration: none;
 }
 
