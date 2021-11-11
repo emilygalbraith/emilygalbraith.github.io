@@ -84,9 +84,9 @@ body {
         grid-area: banner;
         align-items: end;
         display: grid;
-        grid-template-columns: 1.6fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas: 
-            "pic header header header";
+            "header header header header";
     }
 
     menu {
@@ -97,8 +97,8 @@ body {
     }
 
     main {
+        column-gap: 40px;
         grid-area: main;
-        column-gap: 30px;
         align-items: start;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -113,13 +113,12 @@ body {
         width: auto;
         /* border: solid #9876AA 2px; */
         border-radius: 10px;
-        margin-left: 40px;
         /* display: none; */
         
     }
 
     h1 {
-        margin: 0px;
+        margin: 10px;
         font-size: 1.8em;
         
     }
@@ -133,6 +132,9 @@ body {
   
 /* Large devices*/
 @media only screen and (min-width: 992px) {
+    banner {
+        grid-template-columns: ;
+    }
 
 }
   
