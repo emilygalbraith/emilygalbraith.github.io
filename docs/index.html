@@ -11,8 +11,18 @@
     <title>Emily Galbraith's Portfolio</title>
 </head>
 
-<body>
-    <div id="main-container">
+<body id="main-container">
+    <div id="left-panel">
+        <div id="nav-img"><img id="logo-pic" src="images/20211109_155609.jpg" /></div>
+        <menu>
+            <nav>
+                <li><a href="#AboutMe"><span id="class-purp">emily</span>.getAboutMe();</a></li>
+                <li><a href="#Projects"><span id="class-purp">emily</span>.getProjects();</a></li>
+                <li><a href="#ContactInfo"><span id="class-purp">emily</span>.getContactInfo();</a></li>
+            </nav>
+        </menu>
+    </div>
+    <div id="right-panel">
         <banner>
             <!-- <img id="logo-pic" src="images/20211109_155609.jpg" /> -->
             <header>
@@ -21,17 +31,7 @@
                     contactInfo);</h1>
             </header>
         </banner>
-    </div>
-    <div>
         <main>
-            <menu>
-                <img id="logo-pic" src="images/20211109_155609.jpg" />
-                <nav>
-                    <li><a href="#AboutMe"><span id="class-purp">emily</span>.getAboutMe();</a></li>
-                    <li><a href="#Projects"><span id="class-purp">emily</span>.getProjects();</a></li>
-                    <li><a href="#ContactInfo"><span id="class-purp">emily</span>.getContactInfo();</a></li>
-                </nav>
-            </menu>
             <div id="AboutMe">
                 <h3>About Me</h3>
                 <p id="string-green">"Hey there, I'm Emily. I have always been a bit of a nerd. As a kid I loved making
@@ -58,14 +58,14 @@
                         takes user input and generates a backstory using as much or as little as you give it! For more
                         information check out its README."
                     </p>
-                    <a href=https://github.com/emilygalbraith/DnDBackstoryGenerator>View on GitHub</a>
+                    <a target="blank" href=https://github.com/emilygalbraith/DnDBackstoryGenerator>View on GitHub</a>
                 </div>
             </div>
             <div id="ContactInfo">
                 <h3>Contact Info</h3>
-                <p>LinkedIn linkedIn = <span id="keyword-orange">new</span> LinkedIn(<a
+                <p>LinkedIn linkedIn = <span id="keyword-orange">new</span> LinkedIn(<a target="blank"
                         href="https://www.linkedin.com/in/emilygalbraith/">clickMe</a>)</p>
-                <p>GitHub gitHub = <span id="keyword-orange">new</span> GitHub(<a
+                <p>GitHub gitHub = <span id="keyword-orange">new</span> GitHub(<a target="blank"
                         href="https://github.com/emilygalbraith">clickMe</a>)</p>
                 <p>String email = "<span id="string-green">galbraithemily94@gmail.com</span>"</p>
             </div>
