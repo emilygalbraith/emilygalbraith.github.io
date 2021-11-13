@@ -9,7 +9,7 @@ body {
 }
 
 /* Extra small screen */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 699px) {
     #main-container {
         display: flex;
         flex-direction: column;
@@ -77,12 +77,18 @@ body {
         border-bottom: #9876AA solid 3px;
     }
 
+    #Projects, #ContactInfo {
+        /* margin-bottom: 0px; */
+        margin-top: 60px;
+    }
+
 }
   
 /* Medium devices and larger devices*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 700px) {
     #main-container {
         display: flex;
+        height: 100vh;
     }
 
     #left-panel {
@@ -90,15 +96,16 @@ body {
         flex-direction: column;
         border-right: solid #9876AA 4px; 
         padding-right: 10px;
-        height: 100vh;
+        height: 200vh;
     }
 
     #right-panel {
         display: flex;
         flex-direction: column;
         padding-left: 10px;
-        height: 100vh;
+        height: 200vh;
         justify-content: flex-start;
+
     }
 
     menu {
@@ -113,7 +120,7 @@ body {
     #nav-img {
         display: flex;
         justify-content: center;
-        height: 25%;
+        height: 20%;
     }
 
     h1 {
@@ -129,22 +136,35 @@ body {
         font-weight: bold;
     }
 
+
+
 }
 
 @media only screen and (min-width: 1450px) {
     #left-panel {
         width: 25vw;
+        height: 200vh;
     }
 
     #right-panel {
         width: 75vw;
+        height: 200vh;
     }
+
+    #left-panel {
+        height: 200vh;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    
 
     #nav-img {
         display: flex;
         justify-content: center;
-        height: 50%;
-        width: 100%
+        height: 20%;
     }
 
     h1 {
@@ -170,7 +190,11 @@ body {
     menu {
         display: flex;
         justify-content: center;
-        font-size: 2em;
+        font-size: 1.5em;
+    }
+
+    #Projects, #ContactInfo {
+        margin-top: 200px;
     }
 }
 
@@ -215,10 +239,7 @@ main > a:hover {
     text-decoration: underline;
 }
 
-main h3 {
-    /* margin-bottom: 0px; */
-    margin-top: 40px;
-}
+
 
 main p {
     margin: 0px;
