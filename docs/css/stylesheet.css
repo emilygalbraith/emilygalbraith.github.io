@@ -89,28 +89,34 @@ body {
     #main-container {
         display: flex;
         height: 100vh;
+        margin-top: 0px;
+
     }
 
     #left-panel {
-        display: flex;
-        flex-direction: column;
+        display: block;
+        position: fixed;
         border-right: solid #9876AA 4px; 
         padding-right: 10px;
         height: 200vh;
+        width: 25vw;
     }
 
     #right-panel {
-        display: flex;
-        flex-direction: column;
+        /* display: flex;
+        flex-direction: column; */
         padding-left: 10px;
         height: 200vh;
-        justify-content: flex-start;
+        /* justify-content: flex-start; */
+        margin-left: 26vw;
 
     }
 
     menu {
         list-style-type: none;
+        text-align: center;
         padding: 0px;
+        font-size: .8em;
     }
 
     #logo-pic {
@@ -120,7 +126,7 @@ body {
     #nav-img {
         display: flex;
         justify-content: center;
-        height: 20%;
+        height: 17%;
     }
 
     h1 {
@@ -136,23 +142,55 @@ body {
         font-weight: bold;
     }
 
+    header {
+        display: block;
+        position: fixed;
+        background-color: #2B2B2B;
+    }
 
+    main {
+        margin-top: 60vh;
+    }
+
+    #Projects, #ContactInfo {
+        margin-top: 100px;
+    }
 
 }
 
-@media only screen and (min-width: 1450px) {
+
+
+@media only screen and (min-width: 760px) {
+    main {
+        margin-top: 45vh;
+    }
+}
+
+@media only screen and (min-width: 950px) {
+    main {
+        margin-top: 35vh;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    main {
+        margin-top: 30vh;
+    }
+}
+
+
+@media only screen and (min-width: 1250px) {
     #left-panel {
+        display: block;
+        position: fixed;
         width: 25vw;
-        height: 200vh;
+        height: 300vh;
     }
 
     #right-panel {
         width: 75vw;
-        height: 200vh;
-    }
-
-    #left-panel {
-        height: 200vh;
+        height: 300vh;
+        margin-left: 26vw;
     }
 
     main {
@@ -164,11 +202,11 @@ body {
     #nav-img {
         display: flex;
         justify-content: center;
-        height: 20%;
+        height: 17%;
     }
 
     h1 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
     
     h3{
@@ -247,7 +285,12 @@ main p {
 
 main h4 {
     margin: 2px;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#Projects p {
+    margin-bottom: 25px;
 }
 
    
